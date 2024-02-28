@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+cp /autograder/submission/*.py /autograder/source/encrypt.py
+
+cd /autograder/source
+python3 check.py
