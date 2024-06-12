@@ -14,5 +14,9 @@
   * The grader forgot to check that `r` is non-deterministic.
 
 ## Pset 3
-* Challenge files: `output.txt`. `gen.py` can be public after removing the random seed.
+* Challenge files: `output.txt`. `gen_public.py`. `gen.py` is similar to `gen_public.py` except that it explicitly chooses the random seed.
 * Run `sage sol.sage` to recover the secret `s`.
+
+## Pset 4
+* Modify `prover.sage` so that it passes the verifier check.
+* `run.sh` performs the check by importing prover code to verifier.

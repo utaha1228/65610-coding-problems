@@ -20,13 +20,12 @@ for i in range(20):
 M[-1][-1] = 10
 M = matrix(QQ, M)
 M = M.LLL()
-print(M)
 for row in M:
     if row[-1] == -10:
         row = [-x for x in row]
     if row[-1] == 10:
         error = [-x for x in row[:20]]
         s = [int(x * q)// 10 % q for x in row[20:30]]
-        print(error)
-        print(s)
+        print(f"{error = }")
+        print(f"{s = }")
 

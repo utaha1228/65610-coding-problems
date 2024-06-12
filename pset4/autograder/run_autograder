@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+cp /autograder/submission/*.sage /autograder/source/prover.sage
+cd /autograder/source
+
+sage --preparse prover.sage
+mv prover.sage.py prover.py
+sage verifier.sage
